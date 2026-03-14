@@ -11,10 +11,11 @@ Your Discord bot runs as a **serverless function**: Discord sends an HTTP POST t
 ## 2. Set Interactions URL
 
 1. In the Developer Portal, open **General Information**.
-2. Under **Interactions Endpoint URL**, set:
-   - `https://YOUR_VERCEL_DOMAIN.vercel.app/api/interactions`
-   - Replace with your real Vercel URL after first deploy.
-3. Save.
+2. Under **Interactions Endpoint URL**, set the **full path** (the URL must end with `/api/interactions`):
+   - **Correct:** `https://YOUR_VERCEL_DOMAIN.vercel.app/api/interactions`
+   - **Wrong:** `https://YOUR_VERCEL_DOMAIN.vercel.app/` (root URL will not work)
+3. Example for your app: `https://discord-bot-theta-gilt.vercel.app/api/interactions`
+4. Save.
 
 ## 3. Deploy on Vercel
 
